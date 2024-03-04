@@ -1,332 +1,546 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <!-- 
-    :*:･｡,☆ﾟ'･:*:･｡,ヽ(・∀・)人(・∀・)ﾉ ,｡･:*:･ﾟ'☆,｡･:*:
-    
-    Web Theme by the one and only Celine! 『 swirl.neocities.org 』
-    
-    Contact via email for any help regarding this template. ♪(´▽｀)
-    purachoco@gmail.com
-    
-    :*:･｡,☆ﾟ'･:*:･｡,ヽ(・∀・)人(・∀・)ﾉ ,｡･:*:･ﾟ'☆,｡･:*:
-    
-    Terms of use!
-    
-    ♪ Please leave the credit as it is. If you built your site up from my template, the link back stays!
-    ♪ You are allowed to change everything and anything! Please, go ahead!
-    ♪ Have fun costumizing ～
-    
-    Please keep the web a friendly place. I would like more people to find this and redistribute it further.
-    With that being said, respect the rules! ₍₍ ◝(●˙꒳˙●)◜ ₎₎
-    Thank you ～ 🍀
-    
-     :*:･｡,☆ﾟ'･:*:･｡,ヽ(・∀・)人(・∀・)ﾉ ,｡･:*:･ﾟ'☆,｡･:*:
-    -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-        The Cyber Tomboy ☆
-        </title>
-        <style>
-            body {
-            background-image:url('https://64.media.tumblr.com/059e652888dbc5efb19ad8f29a94a584/a3bcaff62cfa93f0-07/s540x810/0768347fd5645157168db3775ad46c374fee34ec.gifv');
-            font-family:Ms Ui Gothic;
-            color:#ffffff;
-            font-size:1em;
-            line-height:19px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; 
-            }
-            #TEMPLATE-LAYOUT {
-            width:740px;
-            height:auto;
-            padding:5px;
-            margin-left:auto;
-            margin-right:auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            align-items: stretch;
-            margin: auto;
-            justify-content: center;  
-            }
-            header {
-            width:70%;
-            height:150px;
-            background: rgb(255,189,200);
-            background: linear-gradient(84deg, rgba(255,189,200,1) 0%, rgba(246,255,175,1) 12%, rgba(205,255,167,1) 25%, rgba(195,241,255,1) 50%, rgba(241,202,245,1) 69%, rgba(252,206,242,1) 91%); /* This is the rainbow BG. feel free to change into anything! */
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue;
-            overflow:hidden;
-            }
-            .shadow{
-            text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, ) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
-            }
-            .BOARD {
-            width:29.3%;
-            height:154px;
-            background-image:url('https://i.imgur.com/N6Fhwtg.gif');
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue;
-            padding:5px;
-            box-sizing:border-box;
-            border-right:0px;
-            }
-            .BOARD p {
-            margin:0px;
-            padding:0px;
-            }
-            .marquee-box {
-            width:100%;
-            height:18px;
-            padding:3px;
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue;
-            margin-top:5px;
-            background:white;
-            }
-            .navigation {
-            width:22%;
-            min-height:430px;
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue;
-            margin-top:5px;
-            margin-left:5px;
-            background:LightSlateGray;
-            overflow:hidden;
-            position: relative  
-            }
-            .button {
-            width:100%;
-            background: rgb(45,0,105);
-            height:autp;
-            font-size:20px;
-            padding:5px;
-            text-align:center;
-            border-bottom:3px ridge DarkBlue;
-            font-weight:600;
-            }
-            ul {
-            list-style: square inside url("https://64.media.tumblr.com/tumblr_lkl5ueZCY01qfamg6.gif"); 
-            padding:3.5px;
-            margin:0px;
-            }
-            .content {
-            width:100%;
-            height:240px;
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue; 
-            margin-top:5px;
-            background-image:url('https://i.imgur.com/dpq8nYi.jpeg');
-            padding:10px;
-            box-sizing:border-box;
-            }
-            .container {
-            width:100%;
-            height:100%;
-            border-width:2px;
-            border-style:ridge;
-            border-color:DarkBlue; 
-            background:LightSlateGray;
-            padding:5px;
-            box-sizing:border-box;
-            overflow-y:auto;
-            }
-            .container p {
-            margin:0px;
-            padding:0px;
-            margin-top:5px;
-            }
-            .the-section {
-            width:76.6%;
-            height:430px;  
-            display: flex;
-            flex-wrap: wrap;
-            }
-            .box-left {
-            width:49.4%;
-            padding:5px;
-            box-sizing:border-box;  
-            border-style:ridge;
-            border-color:DarkBlue; 
-            background:LightSlateGray;
-            margin-top:5px;
-            height:385px;
-            background-image:url('https://i.imgur.com/dpq8nYi.jpeg');
-            padding:10px;  
-            }
-            .box-right {
-            width:49.4%;
-            padding:5px;
-            box-sizing:border-box;  
-            border-style:ridge;
-            border-color:DarkBlue; 
-            background:LightSlateGray;
-            margin-top:5px;
-            min-height:185px;
-            margin-left:5px;
-            background-image:url('https://i.imgur.com/dpq8nYi.jpeg');
-            padding:10px;  
-            }
-            .box-left .button {
-            margin:-5px;
-            }
-            .box-right .button {
-            margin:-5px;
-            }
-            #statuscafe {
-    padding: .5em;
-    background-color: DarkGray;
-    border: 3px dotted midnightblue;
-    width: 300px;
-    height: 130
-}
-#statuscafe-username {
-    margin-bottom: .5em;
-}
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
-    color: BlueViolet;
-}
-.space { 
-    padding: 10px; 
-    align-items: center; 
-    align-content: center; 
-    text-align: center;
-} 
-.audioplayer { 
-    width: 155px; 
-    height: 20px; 
-    top: 0px; 
-    left: 0px;
-} 
-        </style>
-    </head>
-    <body>
-        <div id="TEMPLATE-LAYOUT">
-            <div class="BOARD">
-               
-            </div>
-            <header>
-              <img src="https://i.imgur.com/Rp4xKVF.gif">
-            </header>
-            <div class="marquee-box">
-                <marquee><font color="purple">If miguel o'hara isn't oiled up, butt booty naked in beyond the spiderverse i'm rupturing the USA's underwater internet cables</marquee>
-            </div>
-            <div class="the-section">
-                <div class="content">
-                    <div class="container">
-                        <!-- This section can editted to your liking... --> 
-                        <p>
-                            <img src="https://i.imgur.com/xsEegmv.gif" style="float:right;">
-
-                        </p>
-                        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cybertomboy" defer></script>
-                        <p>...Welcome to my sandbox on this tiny corner of the web...</p>
-                        <br>
-                        <p>Like many other people i became exhausted by the internet, and decided to start phasing social media out of my life for a period of time. HALF OF THE BITCHES ON THE NET ARE LOONEY (humanity is losing its collective mind)</p>
-                        <br>
-                       <p>So this is where i've decided to spend most of my time, just chattin and posting about my wide range of interests. This site is still heavily under construction and i move at a snail pace, so come back periodically to check out what's new!</p>
-                        <br>
-                       <p><img src="https://pixelsafari.neocities.org/favicon/nature/plant/clover.png">
-         stay swag and don't be degenerates
-            <img src="https://pixelsafari.neocities.org/favicon/nature/plant/clover.png"></p>
-                        <!-- this much! --> 
-                        
-                    </div>
-                </div>
-                <div class="box-left">
-                    <div class="container">
-                        <!-- This section can editted to your liking... --> 
-                        <div class="button">
-                            <img src="https://caterpie.crd.co/assets/images/gallery08/11dd059b.gif?v=31fdc6f6">
-                            Miguel fanart 
-                            <br>
-                            Of The Day<img src="https://caterpie.crd.co/assets/images/gallery35/3df7e8a8.gif?v=31fdc6f6">
-                        </div>
-                        <br>
-                        <center><img src="https://i.imgur.com/S75Espu.jpeg"></center>
-                    </div>
-                </div>
-                <div class="box-right">
-                    <div class="container">
-                        <!-- This section can editted to your liking... --> 
-                        <div class="button">
-                           Webrings
-                        </div>
-                       <!--START OF SELF INSERT WEBRING-->
-			<div id="selfinsertwebring">
-				<script src="showWebring.js"></script>
-			</div>
-			<!--END OF SELF INSERT WEBRING-->
-       
-			<br>
-			
-		  <center><div id='freespeechwebring'>
-<script type="text/javascript" src="https://freespeechwebring.neocities.org/onionring-variables.js"></script>
-<script type="text/javascript" src="https://freespeechwebring.neocities.org/onionring-widget.js"></script>
-</div></center>
-<br>
-<center><a href='https://webri.ng/webring/thebookring/previous?via=https://YOUR-URL-GOES-HERE'><img src="https://i.imgur.com/sIR6aFP.gif" width="13" height="13"> </a><a href="https://library.marigold.town/"><img src="https://i.imgur.com/kZzmx1a.gif' width="88" height="31"></a><a href='https://webri.ng/webring/thebookring/next?via=https://YOUR-URL-GOES-HERE'> <img src="https://i.imgur.com/6ni3bTd.gif" width="13" height="13"></a></center>
-<br>
-<center><SCRIPT LANGUAGE="JavaScript"><!--
-if (navigator.appVersion.indexOf('MSIE 3') == -1)
-    document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="https://ficring.neocities.org/ring.js"><\/SCRIPT>');
-else
-    document.write('<CENTER><IFRAME FRAMEBORDER=0 WIDTH="100" HEIGHT="50" MARGINHEIGHT=0 MARGINWIDTH=0 SCROLLING=no SRC="https://ficring.neocities.org/ring.html"><\/IFRAME><\/CENTER>');
-//--></SCRIPT> </center>
-                    </div>
-                </div>
-            </div>
-            <div class="navigation">
-                <!-- This section can editted to your liking... --> 
-                <div class="button">
-                    Navigation
-                </div>
-              <br>
-                <ul>
-                    <li><a href="https://cybertomboy.neocities.org/about">About Me</a></li>
-                    <li><a href="https://cybertomboy.neocities.org/nsfwlibrary">NSFW Library</a></li>
-                    <li><a href="https://cybertomboy.neocities.org/shrine">Shrine</a></li>
-           
-                </ul>
-                <br>
-                <br>
-                <div class="space snipcss-g7f9v">
-  <marquee>
-    <h10>
-      NOW PLAYING: SAY IT RIGHT by Nelly Furtado
-    </h10>
-  </marquee>
-  <br>
-  <img src="https://i.imgur.com/jaZKWEG.gif">
-  <img src="https://i.imgur.com/jaZKWEG.gif">
-  <img src="https://i.imgur.com/jaZKWEG.gif">
-  <img src="https://i.imgur.com/jaZKWEG.gif">
-  <br>
-  <audio controls="" autoplay="" loop="" class="audioplayer">
-    <source src="https://files.catbox.moe/ohu25s.mp3">
-  </audio>
-</div>
-<br>
-<img src="https://i.imgur.com/KvRZPYx.png">   
-<br>
-<textarea id="w3review" name="w3review" rows="2" cols="15"><a href="https://cybertomboy.neocities.org/"><img src="https://i.imgur.com/KvRZPYx.png"></a></textarea></center>
-              
-            </div>
-           
-            <!-- Credit below. Removing is forbidden! Please, let's keep the web friendly. (╯▽╰ ) -->    
-            <center><a href="https://swirl.neocities.org/" style="color:#5e5e5e;position:Relative;top:200px;">Template by swirl</a> <a href="https://swirl.neocities.org/template/luckytheme-CODE" style="color:#5e5e5e;position:Relative;top:15px;"></a></center>
+  <div id="flex" class="snipcss0-0-0-1 snipcss-ac1sM">
+  <br class="snipcss0-1-1-2">
+  <aside id="leftSidebar" class="snipcss0-1-1-3 style-QmARU">
+    <div class="box3 snipcss0-2-3-4 snipcss0-0-0-1">
+      <div class="box-title-bar2 snipcss0-3-4-5 snipcss0-1-1-2">
+        THE ANTAGONISTS
+        <div class="right snipcss0-4-5-6 snipcss0-2-2-3">
+          x
         </div>
+      </div>
+      <div class="inner2 snipcss0-3-4-7 snipcss0-1-1-4">
+        <p class="snipcss0-4-7-8 snipcss0-2-4-5">
+          the game has three priamry "antagonists," difficult guests who take over the penthouse
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-9">
+    <div class="box4scroll snipcss0-2-3-10">
+      <div class="box-title-bar2 snipcss0-3-10-11">
+        FRANKIE FUSILLI: the mobster
+        <div class="right snipcss0-4-11-12">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-10-13">
+        <br class="snipcss0-4-13-14">
+        <center class="snipcss0-4-13-15">
+          <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2frankie.webp" height="150" class="snipcss0-5-15-16">
+        </center>
+        <p class="snipcss0-4-13-17">
+          frankie is the first antagonist of the game, and upon meeting him he demands free accomodations in the penthouse.
+        </p>
+        <p class="snipcss0-4-13-18">
+          over the course of his stay he makes increasingly bizarre requests, such as building a vault in the basement, delivering an exploding cow head, and burying a wriggling chest in the desert.
+        </p>
+        <p class="snipcss0-4-13-19">
+          however, when you go to bury the chest you are confronted by penelope the fbi agent, who confiscates the chest.
+        </p>
+        <p class="snipcss0-4-13-20">
+          under pressure from the fbi, you wear a wire while conversing with frankie, and he admits that he's been laundering money since he arrived.
+        </p>
+        <p class="snipcss0-4-13-21">
+          immediately after this he is taken away by penelope, but claims that he will be back in a few days.
+        </p>
+        <p class="snipcss0-4-13-22">
+          he is provne correct when he returns later in the game as a regular hotel guest.
+        </p>
+        <p class="snipcss0-4-13-23">
+          fun fact: after frankie leaves you can use his money press in the vault to print money, at the risk of being caught and fined
+          <br class="snipcss0-5-23-24">
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-25">
+    <div class="box4scroll snipcss0-2-3-26">
+      <div class="box-title-bar2 snipcss0-3-26-27">
+        AVA CADAVRA: the cult leader
+        <div class="right snipcss0-4-27-28">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-26-29">
+        <br class="snipcss0-4-29-30">
+        <center class="snipcss0-4-29-31">
+          <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2ava.webp" height="150" class="snipcss0-5-31-32">
+        </center>
+        <p class="snipcss0-4-29-33">
+          ava appears in town shortly after frankie fusilli's arrest, claiming the penthouse
+        </p>
+        <p class="snipcss0-4-29-34">
+          she immediately has you create the bovine shrine in the basement, which contains a statue of the prime heifer for her cult to worship
+        </p>
+        <p class="snipcss0-4-29-35">
+          soon she begins inducting people into her cult, and they can be seen trapped and chanting mindless at the shrine
+        </p>
+        <p class="snipcss0-4-29-36">
+          the player then recieves a phonecall instructing them to go into the desert at night, where they locate an acient crypt and meet the mummy horus menhoset IX. 
+        </p>
+        <p class="snipcss0-4-29-37">
+          horus later instructs the player to retrieve his branding iron and use it on the prime heifer.
+        </p>
+        <p class="snipcss0-4-29-38">
+          once the branding iron is used, the prime heifer is destroyed, causing ava cadavra to fly into a rage, light the penthouse on fire, and leave without payment
+          <br class="snipcss0-5-38-39">
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-40">
+    <div class="box4scroll snipcss0-2-3-41">
+      <div class="box-title-bar2 snipcss0-3-41-42">
+        OPTIMUM ALFRED: the robot
+        <div class="right snipcss0-4-42-43">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-41-44">
+        <br class="snipcss0-4-44-45">
+        <center class="snipcss0-4-44-46">
+          <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2alfred.webp" height="150" class="snipcss0-5-46-47">
+        </center>
+        <p class="snipcss0-4-44-48">
+          a scheming robot, optimum alfred takes over the penthouse after ava's quick exit.
+        </p>
+        <p class="snipcss0-4-44-49">
+          he first demands that you get him a galvatronic power recharger so that he can clean up the penthouse, then he starts building a satelite on the sun deck.
+        </p>
+        <p class="snipcss0-4-44-50">
+          shortly after, optimum alfed announces his true intentions are to lead an robot invasion in strangetown in an attempt to take over.
+        </p>
+        <p class="snipcss0-4-44-51">
+          once this happens, the player must act as the ratticator to defeat his sidekicks and team up with alien emperor xizzle to steal alfred's plans and eventually stop the invasion.
+        </p>
+        <p class="snipcss0-4-44-52">
+          once optimum alfred is defeated, the main storyline is complete.
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-53">
+    <div class="box4scroll snipcss0-2-3-54">
+      <div class="box-title-bar2 snipcss0-3-54-55">
+        EMPEROR XIZZLE: the alien
+        <div class="right snipcss0-4-55-56">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-54-57">
+        <br class="snipcss0-4-57-58">
+        <center class="snipcss0-4-57-59">
+          <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/Xizzle.PNG.webp" height="150" class="snipcss0-5-59-60">
+        </center>
+        <p class="snipcss0-4-57-61">
+          emperor xizzle is a minor antagonist, an alien who is consistantly trying to invade strangetown.
+        </p>
+        <p class="snipcss0-4-57-62">
+          he and his minions spawn randomly from time to time conducting minor invasions, but can be easily defeated once you spray them with water.
+        </p>
+        <p class="snipcss0-4-57-63">
+          if you timeskip your ds while playing the game you will see an extended cutscene of a large scale alien invasion lead by emperor xizzle.
+        </p>
+        <p class="snipcss0-4-57-64">
+          at the end of the game, the player teams up with him to take down optimum alfred.
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-65">
+    <center class="snipcss0-2-3-66">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2ratticator.png" width="250" class="snipcss0-3-66-67">
+    </center>
+    <br class="snipcss0-2-3-68">
+    <div class="box3 snipcss0-2-3-69">
+      <div class="box-title-bar2 snipcss0-3-69-70">
+        THE RATTICATOR
+        <div class="right snipcss0-4-70-71">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-69-72">
+        <p class="snipcss0-4-72-73">
+          the ratticator is a superhero that asissts the people of strangetown. the player takes on the identity of the ratticator after unlocking the rat cave.
+        </p>
+        <p class="snipcss0-4-72-74">
+          as the ratticator, you are able to quickly take on goons, robots, and aliens. 
+        </p>
+        <p class="snipcss0-4-72-75">
+          fun fact: it is revealed that tristan legend was the original ratticator
+          <br class="snipcss0-5-75-76">
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-3-77">
+  </aside>
+  <main class="snipcss0-1-1-78">
+    <center class="snipcss0-2-78-79">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2ds.jpeg" width="400" class="snipcss0-3-79-80">
+    </center>
+    <br class="snipcss0-2-78-81">
+    <div class="box4 snipcss0-2-78-82">
+      <div class="box-title-bar snipcss0-3-82-83">
+        THE SIMS 2 DS
+        <div class="right snipcss0-4-83-84">
+          x
+        </div>
+      </div>
+      <div class="inner snipcss0-3-82-85">
+        <p class="snipcss0-4-85-86">
+          sims 2 ds game was one of my favorite games growing up, even though it also scared the hell out of me. the game has an eerie, hotel california-like atmosphere that is extremely surreal and off-putting.
+        </p>
+        <p class="snipcss0-4-85-87">
+          although the premise of the game was a simple hotel simulator, there were also a host of bizarre supblots, such as:
+        </p>
+        <li class="snipcss0-4-85-88">
+          dealing with the mob
+        </li>
+        <li class="snipcss0-4-85-89">
+          a cow cult in the basement
+        </li>
+        <li class="snipcss0-4-85-90">
+          alien invasions
+        </li>
+        <li class="snipcss0-4-85-91">
+          robot invasions
+        </li>
+        <li class="snipcss0-4-85-92">
+          mummies
+        </li>
+        <li class="snipcss0-4-85-93">
+          becoming a cat themed superhero
+        </li>
+        <li class="snipcss0-4-85-94">
+          alien autopsies
+        </li>
+        <li class="snipcss0-4-85-95">
+          discovering bigfoot
+        </li>
+        <p class="snipcss0-4-85-96">
+          quite frankly, the game feels cursed
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-78-97">
+    <center class="snipcss0-2-78-98">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FTUlF0S5XhA" title="sims 2 ds opening" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="snipcss0-3-98-99">
+      </iframe>
+    </center>
+    <br class="snipcss0-2-78-100">
+    <div class="box4 snipcss0-2-78-101">
+      <div class="box-title-bar snipcss0-3-101-102">
+        THE PLOT
+        <div class="right snipcss0-4-102-103">
+          x
+        </div>
+      </div>
+      <div class="inner snipcss0-3-101-104">
+        <p class="snipcss0-4-104-105">
+          the sims 2 ds game begins with the player crashing their car in strangetown. 
+        </p>
+        <p class="snipcss0-4-104-106">
+          jebidiah s. jerky suggests that you check into the local hotel, since your engine has "more holes than a donut shop." 
+        </p>
+        <p class="snipcss0-4-104-107">
+          upon arrival the player learns that the manager of the hotel left the previous day, and that there's a note at the check-in desk addressed to the player's character, declaring them the new manager of the hotel.
+        </p>
+        <p class="snipcss0-4-104-108">
+          the object of the game is to maintain the hotel, improve the hotel by building rooms and buying objects, and to assist the electic group of guests with their daily requests.
+        </p>
+        <p class="snipcss0-4-104-109">
+          the game ends once you defeat the final antaognist, optimum alfred.
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-78-110">
+    <center class="snipcss0-2-78-111">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2timetravel.png" height="230" class="snipcss0-3-111-112">
+    </center>
+    <br class="snipcss0-2-78-113">
+    <div class="box4 snipcss0-2-78-114">
+      <div class="box-title-bar snipcss0-3-114-115">
+        ALTERING THE CLOCK
+        <div class="right snipcss0-4-115-116">
+          x
+        </div>
+      </div>
+      <div class="inner snipcss0-3-114-117">
+        <p class="snipcss0-4-117-118">
+          this game uses real-life time for many of it's mechanics, and is infamous for having skill poinst that are accessible only at bizarre times of day. because of this, many players may consider simply altering the clock on their ds.
+        </p>
+        <p class="snipcss0-4-117-119">
+          however, if you alter the clock while playing the sims 2, the game retaliates by calling you a "time-travelling cheater," and punishes you for it.
+          <br class="snipcss0-5-119-120">
+        </p>
+        <center class="snipcss0-4-117-121">
+          <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/Xizzletimetravel.webp" height="200" class="snipcss0-5-121-122">
+        </center>
+        <br class="snipcss0-4-117-123">
+        <p class="snipcss0-4-117-124">
+          upon re-entering the game, the player is treated to a cutscene of emperor xizzle leading an alien invasion in strangetown. additionally, the music is changed, it will now be pouring rain, and the player will only be able to move very, very slowly.  
+        </p>
+        <p class="snipcss0-4-117-125">
+          honestly, the first time that this happened to me as a kid it freaked me out so much that i started an entirely new save file. it does alter your file draastically, i do not reccomend time skipping. 
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-78-126">
+    <center class="snipcss0-2-78-127">
+      <a href="https://valiantnightllama.tumblr.com/post/686957918793383936" class="snipcss0-3-127-128">
+        <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2dsmeme_1.png" width="400" class="snipcss0-4-128-129">
+      </a>
+    </center>
+    <br class="snipcss0-2-78-130">
+    <center class="snipcss0-2-78-131">
+      <a href="https://valiantnightllama.tumblr.com/post/686957918793383936" class="snipcss0-3-131-132">
+        <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2dsmeme_2.png" width="400" class="snipcss0-4-132-133">
+      </a>
+    </center>
+  </main>
+  <aside id="rightSidebar" class="snipcss0-1-1-134 style-bEtzd">
+    <div class="box3 snipcss0-2-134-135">
+      <div class="box-title-bar2 snipcss0-3-135-136">
+        THE SOUNDTRACK
+        <div class="right snipcss0-4-136-137">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-135-138">
+        <p class="snipcss0-4-138-139">
+          the music of the game definitely contributed to the wacky feel
+        </p>
+        <p class="snipcss0-4-138-140">
+          give it a listen  
+          <a href="https://www.youtube.com/watch?v=ZSP-be0Rzs4&amp;list=PLF27884AABC7F90FB" class="snipcss0-5-140-141">
+            here
+          </a>
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-134-142">
+    <center class="snipcss0-2-134-143">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2sanity.png" width="250" class="snipcss0-3-143-144">
+    </center>
+    <br class="snipcss0-2-134-145">
+    <div class="box3 snipcss0-2-134-146">
+      <div class="box-title-bar2 snipcss0-3-146-147">
+        THE SANITY METER
+        <div class="right snipcss0-4-147-148">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-146-149">
+        <p class="snipcss0-4-149-150">
+          the sims 2 ds only has one meter for sims, called the sanity meter. you can raise your sanity by interacting with certain objects. 
+        </p>
+        <p class="snipcss0-4-149-151">
+          sanity plumments quickly when venturing into the desert. if your sanity meter drops too low, you will black out and wake up in jail and have to pay bail to be released.
+        </p>
+        <p class="snipcss0-4-149-152">
+          players are also responsible for mainting the sanity of others sims, who repeastedly get agitated and loopy.
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-134-153">
+    <center class="snipcss0-2-134-154">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2alienautopsies.jpeg" width="250" class="snipcss0-3-154-155">
+    </center>
+    <br class="snipcss0-2-134-156">
+    <div class="box3 snipcss0-2-134-157">
+      <div class="box-title-bar2 snipcss0-3-157-158">
+        ALIEN AUTOPSIES
+        <div class="right snipcss0-4-158-159">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-157-160">
+        <p class="snipcss0-4-160-161">
+          alien autopsy is one of the mini games that you can play in the government lab. 
+        </p>
+        <p class="snipcss0-4-160-162">
+          to play, players first use the metal detector to find a mummified alien in the desert.
+        </p>
+        <p class="snipcss0-4-160-163">
+          a good way to earn simoleons, gameplay involves carefully tracing healthy organs and adding them to the cooler. 
+          <br class="snipcss0-5-163-164">
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-134-165">
+    <center class="snipcss0-2-134-166">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2bigfoot.png" width="300" class="snipcss0-3-166-167">
+    </center>
+    <br class="snipcss0-2-134-168">
+    <div class="box3 snipcss0-2-134-169">
+      <div class="box-title-bar2 snipcss0-3-169-170">
+        BIGFOOT
+        <div class="right snipcss0-4-170-171">
+          x
+        </div>
+      </div>
+      <div class="inner2 snipcss0-3-169-172">
+        <p class="snipcss0-4-172-173">
+          bigfoot is a hidden character located in the secret warehouse.
+        </p>
+        <p class="snipcss0-4-172-174">
+          to get him to visit the hotel the player must feed him every day until he is befriended.
+        </p>
+      </div>
+    </div>
+    <br class="snipcss0-2-134-175">
+    <center class="snipcss0-2-134-176">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2trsitan1.jpeg" width="300" class="snipcss0-3-176-177">
+    </center>
+    <br class="snipcss0-2-134-178">
+    <center class="snipcss0-2-134-179">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/tumblr_bb66bedbdfc622ee613ea23f098c694c_f6449135_500.jpeg" width="300" class="snipcss0-3-179-180">
+    </center>
+    <br class="snipcss0-2-134-181">
+    <center class="snipcss0-2-134-182">
+      <img src="https://thegardenofmadeline.neocities.org/images/sims2ds/sims2dusty.jpeg" width="300" class="snipcss0-3-182-183">
+    </center>
+    <br class="snipcss0-2-134-184">
+    <iframe src="https://www3.cbox.ws/box/?boxid=3528106&amp;boxtag=gxahbV" width="100%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="snipcss0-2-134-185">
+    </iframe>
+  </aside>
+</div>
+
+
+
+	    
+	    <style>
+		 @import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,600,700,800,900,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+  body {  
+    color:black;
+    font-family:Verdana;
+    background-image:var(--body-bg-image);
+  }  
+* { 
+    box-sizing: border-box;
+} 
+
+body { 
+    background-color: white; 
+    color: black; 
+    font-family: Verdana;
+} 
+
+body { 
+    font-family: 'Nunito', sans-serif; 
+    margin: 0; 
+    background-color: #000000; 
+    background-size: 300px; 
+    color: #ffffff; 
+    background-image: var(--body-bg-image);
+} 
+
+:root { 
+    --body-bg-image: url("https://thegardenofmadeline.neocities.org/gifs/sims_plumob_black.gif"); 
+} 
+
+#flex { 
+    display: flex;
+} 
+
+aside { 
+    border-radius: 0px; 
+    border: 0px solid #ffffff; 
+    width: 330px; 
+    padding-top: 20px;
+} 
+
+main { 
+    border-radius: 0px; 
+    flex: 1; 
+    padding: 20px; 
+    order: 2;
+} 
+
+#rightSidebar { 
+    order: 3;
+} 
+
+.box3 { 
+    width: 100%; 
+    background-color: #575ea3; 
+    border-radius: 15px; 
+    border: 8px solid#8488ce; 
+    padding: 4px;
+} 
+
+.box4scroll { 
+    width: 100%; 
+    height: 450px; 
+    background-color: #575ea3; 
+    border-radius: 15px; 
+    border: 8px solid#8488ce; 
+    padding: 4px; 
+    overflow: auto;
+} 
+
+.box4 { 
+    width: 100%; 
+    background-color: #575ea3; 
+    border-radius: 15px; 
+    border: 8px solid#8488ce; 
+    padding: 4px;
+} 
+
+.box-title-bar2 { 
+    background: #8488ce; 
+    color: white; 
+    font-weight: bold; 
+    padding: 5px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-radius: 8px;
+} 
+
+.inner2 { 
+    padding: 10px; 
+    padding-bottom: 5px; 
+    padding-top: 2px; 
+    border-radius: 15px;
+} 
+
+.box-title-bar { 
+    background: #8488ce; 
+    color: white; 
+    font-weight: bold; 
+    padding: 5px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-radius: 8px;
+} 
+
+.inner { 
+    padding: 10px; 
+    padding-bottom: 5px; 
+    padding-top: 2px; 
+    border-radius: 15px;
+} 
+
+#container a { 
+    color: #5fde2d; 
+    font-weight: bold;
+} 
+
+.right { 
+    float: right; 
+    margin-right: 5px; 
+    font-family: "Arial", sans-serif; 
+    line-height: 12px;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#leftSidebar.style-QmARU {  
+   margin-right: 15px;  
+}  
+#rightSidebar.style-bEtzd {  
+   margin-left: 10px;  
+}  
+   
+	    </style>
     </body>
 </html>
   
