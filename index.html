@@ -43,10 +43,12 @@
 
 	    
   <main class="snipcss0-0-0-1">
-    <center class="snipcss0-1-1-2">
-      <img src="https://thegardenofmadeline.neocities.org/images/wtmv/nightvale_logo.jpeg" width="500" class="snipcss0-2-2-3">
-    </center>
-    <br class="snipcss0-1-1-4">
+	  
+<div class="levitating-image">
+  <img src="https://i.imgur.com/teNymnj.png" alt="Levitating Image">
+</div>
+    
+    <br>
     <div class="box4 snipcss0-1-1-5">
       <div class="box-title-bar snipcss0-2-5-6">
         WELCOME TO NIGHT VALE
@@ -276,6 +278,24 @@ h2 {
 #rightSidebar.style-LVmUY {  
    margin-left: 10px;  
 }  	
+.levitating-image {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px; /* Adjust the perspective to your liking */
+}
+
+.levitating-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.levitating-image:hover img {
+  transform: translate(-50%, -50%) translateY(-10px); /* Adjust the translateY value to control the levitation height */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Optional: Add a box shadow for a more realistic effect */
+}			
 		</style>
 		   
     </body>
