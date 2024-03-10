@@ -816,3 +816,598 @@
   <canvas width="70" height="70" id="snipcss-kiwi" class="style-ez3AO">
   </canvas>
 </div>
+
+<style>
+
+  @font-face { 
+  font-family:'synkopy';
+  src:url(https://awhe.neocities.org/templates/archive/Synkopy-Regular.otf);
+} 
+@font-face { 
+  font-family:"Font Awesome 5 Free";
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot);
+  src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.svg#fontawesome) format("svg");
+} 
+@font-face { 
+  font-family:"Font Awesome 5 Free";
+  font-style:normal;
+  font-weight:900;
+  font-display:block;
+  src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot);
+  src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.svg#fontawesome) format("svg");
+} 
+  body {  
+    cursor:url(https://cur.cursors-4u.net/anime/ani-12/ani1105.cur), auto !important;
+  }  
+* { 
+    cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1105.cur), auto !important;
+} 
+
+html { 
+    scroll-behavior: smooth;
+} 
+
+body { 
+    text-align: left; 
+    font-family: ms gothic, monospace; 
+    background-image: url('https://awhe.neocities.org/img/indexbg.jpg'); 
+    font-size: 2vh;
+} 
+
+:selection { 
+    color: #ffffff; 
+    background: #558AC0;
+} 
+
+:-webkit-scrollbar { 
+    width: 15px; 
+    height: 15px;
+} 
+
+:-webkit-scrollbar-thumb { 
+    border: 1px solid #000;
+} 
+
+.titter { 
+    border: #558AC0 1px solid; 
+    height: 200px; 
+    width: 12%; 
+    float: left; 
+    position: absolute; 
+    margin-top: 14.9%; 
+    background-color: white; 
+    margin-left: 16%; 
+    overflow: auto; 
+    overflow-x: hidden;
+} 
+
+#hum { 
+    bottom: 0; 
+    margin-left: 17%; 
+    margin-bottom: 3.5%; 
+    position: absolute; 
+    padding: 0 5px 0 5px; 
+    padding-top: 15px; 
+    overflow: auto; 
+    z-index: 1;
+} 
+
+#title { 
+    top: 2%; 
+    position: absolute; 
+    left: 40%; 
+    text-shadow: 2px 2px white;
+} 
+
+.container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 10fr 1fr 5fr 7fr 0.1fr; 
+    grid-auto-columns: 1fr; 
+    gap: 10px 1%; 
+    grid-auto-flow: row; 
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    grid-template-areas: ". header header header ."        ". profile1 main main ."        ". profile2 main main ."        ". profile2 foot foot ."        ". . . . ."; 
+    margin: 0 auto; 
+    margin-top: 5%; 
+    margin-left: 16%; 
+    width: 70%; 
+    height: 800px;
+} 
+
+span { 
+    font-family: 'synkopy'; 
+    font-size: 6vh; 
+    color: #70a9df;
+} 
+
+.header { 
+    grid-area: header; 
+    background-color: aqua; 
+    border: #558AC0 1px solid; 
+    width: 100%; 
+    height: 100%;
+} 
+
+.profile1 { 
+    grid-area: profile1; 
+    background-color: white; 
+    height: 100%; 
+    width: 100%; 
+    border: #558AC0 1px solid;
+} 
+
+.profile2 { 
+    grid-area: profile2; 
+    background-color: white; 
+    height: 100%; 
+    width: 100%; 
+    border: #558AC0 1px solid; 
+    overflow: auto; 
+    font-size: 2vh;
+} 
+
+.main { 
+    grid-area: main; 
+    background-color: white; 
+    height: 100%; 
+    width: 100%; 
+    border: #558AC0 1px solid; 
+    overflow: auto;
+} 
+
+.foot { 
+    grid-area: foot; 
+    background-color: white; 
+    height: 100%; 
+    width: 100%; 
+    border: #558AC0 1px solid; 
+    overflow: auto;
+} 
+
+#header_img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: fill; 
+    background-position: 57% 50%; 
+    background-image: url('https://awhe.neocities.org/img/indexhead.jpg');
+} 
+
+hr { 
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, white, #558AC0, white);
+} 
+
+p { 
+    margin: 2.5%;
+} 
+
+ul { 
+    font-size: 2vh;
+} 
+
+#update { 
+    height: 150px; 
+    width: 90%; 
+    padding: 1%; 
+    font-size: 16px; 
+    overflow: auto; 
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+    border: 3px solid #6292F0; 
+    background: white; 
+    margin-left: 3.5%; 
+    margin-bottom: 3%; 
+    overflow-x: hidden; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    text-align: left;
+} 
+
+#update:-webkit-scrollbar { 
+    display: none;
+} 
+
+#cbox { 
+    border: 1px solid #558AC0; 
+    height: 498px; 
+    width: 13.3%; 
+    right: 14%; 
+    bottom: 7.7%; 
+    position: absolute; 
+    padding: 0 5px 0 5px; 
+    z-index: 1; 
+    background-color: white;
+} 
+
+:host { 
+    display: inline-block; 
+    overflow: hidden; 
+    text-align: initial; 
+    white-space: nowrap;
+} 
+
+#musicplayer { 
+    background: white; 
+    border: 1px solid #558AC0; 
+    width: 200px;
+} 
+
+.profile2 img  { 
+    padding: 2%;
+} 
+
+.float { 
+    float: right; 
+    max-width: 100px;
+} 
+
+a { 
+    color: #0000EE; 
+    text-decoration: none;
+} 
+
+a:hover { 
+    color: #a2a2ff; 
+    text-decoration: none;
+} 
+
+:host > div { 
+    will-change: transform;
+} 
+
+.controls { 
+    font-size: 18px !important; 
+    background-color: #A0C7FE; 
+    text-align: center; 
+    width: 100%;
+} 
+
+.seeking { 
+    background-color: #A0C7FE; 
+    display: flex; 
+    justify-content: space-evenly; 
+    padding: 5px;
+} 
+
+.songtitle { 
+    padding: 5px; 
+    border-bottom: 2px solid #558AC0; 
+    display: block;
+} 
+
+.current-time { 
+    padding-right: 5px;
+} 
+
+input[type="range"] { 
+    -webkit-appearance: none; 
+    width: 100%; 
+    background-color: #A0C7FE;
+} 
+
+.total-duration { 
+    padding-left: 5px;
+} 
+
+.controls td  { 
+    padding: 8px 5px 0px 5px;
+} 
+
+.fas { 
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased; 
+    display: inline-block; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-rendering: auto; 
+    line-height: 1;
+} 
+
+.fas { 
+    font-family: "Font Awesome 5 Free";
+} 
+
+.fas { 
+    font-weight: 900;
+} 
+
+i.fas.fa-backward { 
+    color: white;
+} 
+
+.fa-backward:before { 
+    content: "\f04a";
+} 
+
+i.fas.fa-play { 
+    color: white;
+} 
+
+.fa-play:before { 
+    content: "\f04b";
+} 
+
+i.fas.fa-forward { 
+    color: white;
+} 
+
+.fa-forward:before { 
+    content: "\f04e";
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-wJtnW.style-wJtnW {  
+   text-align: center;  
+}  
+#style-3nGyQ.style-3nGyQ {  
+   font-size: 3vh;  
+}  
+#style-Ptoq4.style-Ptoq4 {  
+   border:none;  
+    width:100%;  
+}  
+#style-BP8qJ.style-BP8qJ {  
+   float:right;  
+    right:11%;  
+    top:22%;  
+    width:20%;  
+    height:auto;  
+    position: absolute;  
+}  
+#style-cWAwk.style-cWAwk {  
+   position:absolute;  
+   bottom:12%;  
+   left:17%;  
+}  
+#style-wa4j2.style-wa4j2 {  
+   border: white 3px solid;  
+}  
+#style-Oo9TC.style-Oo9TC {  
+   resize:none;  
+   width:200px;  
+   overflow:scroll;  
+   border:1px solid black;  
+   color:#0000EE;  
+   box-shadow: 0px 0px 10px #fff;  
+}  
+#style-jaqlI.style-jaqlI {  
+   color: #000;  
+}  
+#style-kEUOc.style-kEUOc {  
+   font-size: 16px;  
+    text-shadow: 2px 2px white;  
+    background:rgba(255,255,255, 0.9);  
+    margin-top: 32%;  
+}  
+#style-MsXD9.style-MsXD9 {  
+   text-decoration:none;  
+}  
+#style-PsAmj.style-PsAmj {  
+   text-align: center;  
+}  
+#style-rwfqv.style-rwfqv {  
+   font-size: 3vh;  
+}  
+#style-y1kp6.style-y1kp6 {  
+   text-align: center;  
+}  
+#style-PgJUO.style-PgJUO {  
+   font-size: 3vh;  
+}  
+#style-yxjNt.style-yxjNt {  
+   text-align:left;  
+}  
+#style-NrpN3.style-NrpN3 {  
+   text-align:left;  
+}  
+#style-UBm1s.style-UBm1s {  
+   text-align:left;  
+}  
+#style-rFLON.style-rFLON {  
+   text-align:left;  
+}  
+#style-eKnBB.style-eKnBB {  
+   font-size: 3vh;  
+}  
+#melonland-surf-club.style-y28SU {  
+   width: 100px;  
+    height: 100px;  
+}  
+#style-6SstB.style-6SstB {  
+   font-size: 3vh;  
+}  
+#style-wQ5SS.style-wQ5SS {  
+   text-align: center;  
+}  
+#style-2gJW4.style-2gJW4 {  
+   font-size: 3vh;  
+}  
+#style-yFoFl.style-yFoFl {  
+   padding-right:10px;  
+}  
+#style-9TSOq.style-9TSOq {  
+   display:block;  
+    margin-left:5%;  
+}  
+#style-p93go.style-p93go {  
+   font-size: 16px;  
+}  
+#style-qpB5v.style-qpB5v {  
+   font-size: 16px;  
+}  
+#style-KN2oo.style-KN2oo {  
+   font-size: 16px;  
+}  
+#style-ZikJO.style-ZikJO {  
+   font-size: 16px;  
+}  
+#style-RTheC.style-RTheC {  
+   font-size:x-small;  
+}  
+#style-aBLgI.style-aBLgI {  
+   text-align: center;  
+}  
+#style-Mh1A3.style-Mh1A3 {  
+   font-size: 3vh;  
+}  
+#style-LvlGC.style-LvlGC {  
+   border: none;  
+    width:100%;  
+}  
+#style-I9zcQ.style-I9zcQ {  
+   text-align: center;  
+}  
+#style-w1TgU.style-w1TgU {  
+   font-size: 3vh;  
+}  
+#style-4Rk1o.style-4Rk1o {  
+   text-align: center;  
+}  
+#style-opZMm.style-opZMm {  
+   font-size: 3vh;  
+}  
+#style-v8z7h.style-v8z7h {  
+   text-align: center;  
+}  
+#style-Xv48N.style-Xv48N {  
+   font-size: 3vh;  
+}  
+#style-AXQC6.style-AXQC6 {  
+   list-style-type:decimal;  
+}  
+#style-nKCgo.style-nKCgo {  
+   text-align: center;  
+}  
+#style-wIJA1.style-wIJA1 {  
+   font-size: 3vh;  
+}  
+#style-SMJQl.style-SMJQl {  
+   top: 78px;  
+    left: 8px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-Fv5e4.style-Fv5e4 {  
+   top: 78px;  
+    left: 1616px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-e84HT.style-e84HT {  
+   top: -4px;  
+    left: -4px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-hcF2d.style-hcF2d {  
+   top: 78px;  
+    left: 6px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-YBrFb.style-YBrFb {  
+   top: 78px;  
+    left: 8px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-XNmg6.style-XNmg6 {  
+   top: 78px;  
+    left: 1616px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-x4o4H.style-x4o4H {  
+   top: -4px;  
+    left: -4px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-dMOpt.style-dMOpt {  
+   top: 78px;  
+    left: 6px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-dmaXz.style-dmaXz {  
+   top: 0px;  
+    left: 0px;  
+    position: absolute;  
+}  
+#snipcss-panel-container.style-c1Sph {  
+   right: 70px;  
+    top: 578.5px;  
+}  
+#style-ECFgE.style-ECFgE {  
+   touch-action: none;  
+}  
+#style-n9611.style-n9611 {  
+   touch-action: none;  
+}  
+#style-WmZ5R.style-WmZ5R {  
+   top: 78px;  
+    left: 8px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-yQHjp.style-yQHjp {  
+   top: 78px;  
+    left: 1616px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-z6TDY.style-z6TDY {  
+   top: -4px;  
+    left: -4px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-gzajm.style-gzajm {  
+   top: 78px;  
+    left: 6px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-wPIcc.style-wPIcc {  
+   top: 78px;  
+    left: 8px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-6SAAl.style-6SAAl {  
+   top: 78px;  
+    left: 1616px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-XoXbs.style-XoXbs {  
+   top: -4px;  
+    left: -4px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-n1a8M.style-n1a8M {  
+   top: 78px;  
+    left: 6px;  
+    height: 0px;  
+    width: 0px;  
+}  
+#style-RLCOW.style-RLCOW {  
+   top: 0px;  
+    left: 0px;  
+    position: absolute;  
+}  
+#snipcss-kiwi.style-ez3AO {  
+   left: 1539px;  
+    top: 10px;  
+}  
+
+</style>
