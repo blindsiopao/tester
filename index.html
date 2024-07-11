@@ -1,134 +1,103 @@
-body {
-  background: #f7d5f7 url("/img/cherrie.gif"); /*Replace with your own background*/
-	background-size: cover;
-	background-attachment: fixed;
-  background-position:center;
-	font-family: "VT-100", fixedsys, System, monospace;
-	font-size: 13px;
+/*Two columns by default. The "single-column" class can be added to make it one column.*/
+.main {
+  columns: 2;
+  column-gap: 25px;
   }
   
-center {
-  text-align: center;
-  }
-  
-a {
-  color: #3c5832;
-  }
-
-/*All sidebars go in here.*/  
-.sidebar-group {
-  position: fixed;
-  top: 0;
-  margin-top: 25px;
-  }
-  
-/*Code shared by all window-style boxes. To see what different specific sidebar classes look like, check the demo page.*/
-.sidebar, .mini-sidebar, .wide-sidebar, .box {
-  background: #dff7d5;
-  border-radius: 5px;
-  border: 1px solid #618a50;
-  box-shadow: 2px 2px #3c5832;
-  }
-  
-/*Prevent image overflow.*/
-.sidebar img, .mini-sidebar img, .wide-sidebar img, .box img {
-  max-width: 100%;
-  height:auto; /*Prevent squishing*/
-  }
-  
-.sidebar, .sidebar-box {
+/*Make sure boxes don't spread over multiple columns.*/
+.main .box {
   display: inline-block;
-  vertical-align: top;
-  width: 160px;
   }
   
-/*Container for vertical stacks of multiple mini-sidebars*/
-.sidebar-box {
-  margin-left: 10px;
+.single-column {
+  columns: 1;
   }
   
-.sidebar {
-  width: 160px;
-  margin-left: 25px;
-  }
-  
-.mini-sidebar {
+.footer {
   margin-bottom: 25px;
   }
   
-.wide-sidebar {
-  margin-left: 25px;
-  margin-top: 25px;
-  width: 340px;
-  min-height: 150px;
+@media(max-width:915px) {
+  .wrapper {    
+    width: 95%;
+    }
+    
+  .main-wrapper {
+    width: calc(100% - 225px);
+    }
   }
   
-/*Inside/main text of window boxes.*/
-.inner {
-  padding: 10px;
-  padding-bottom: 5px;
-  padding-top: 0px;
+@media (orientation: portrait), (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    }
+  
+  .main-wrapper, .sidebar, .footer {
+    margin: 0 auto;
+    width: 90%;
+    }
+  
+  .sidebar {
+    float: none;
+    display: block;
+    }
+
+  .sidebar-image {
+    margin: 0 auto;
+    width: 33%;
+    margin-top:25px;
+    }
+
+  .sidebar .sidebar-image img {
+    width: 100%;
+    }
+    
+  .footer {
+    margin-bottom: 25px;
+    }
+  
   }
 
-/*The title bar at the top of window boxes.*/
-.title-bar, .box-title-bar {
-  background: #7aa469;
-  color: white;
-  font-weight: bold;
-  padding: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+
+  @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+body {
+  background: linear-gradient(rgb(10,5,0,0.05), rgb(10,5,0,0.1)), url("/skaiabg.png") no-repeat fixed;
+  background-size: cover;
+  font-family: "Readex Pro", Open Sans, sans-serif;
   }
-  
-/*The title bar of boxes has slightly more padding, since there's more room to space text.*/
-.box-title-bar {
-  padding: 7px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  }
-  
-/*For the symbol in the top right corner.*/
-.right {
-  float: right;
-  margin-right: 5px;
-  font-family: "Arial", sans-serif;
-  line-height: 12px;
-  }
-  
-/*Round circular image.*/
-.icon {
-  border: #80aa6f solid 2px;
-  border-radius: 50%;
-  }
-  
-/*Main body text boxes.*/
+
 .box {
-  margin-top: 25px;
-  margin-left: 400px;
-  width: 455px;
-  margin-bottom: 25px;
+  border-radius: 1.5em 0.175em;
+  background: rgb(10,5,0,0.85);
+  color: white;
+  border: 1px solid #aae6ff;
+  padding: 0.75em 1.25em;
   }
   
-  
-  
-/*this part is a joke. no need to use it.*/
-.big-quote {
-  font-size: 32px;
-  color: #3c5832;
-  letter-spacing: 6px;
-  word-spacing: 2px;
-  font-family: "Garamond", "Bookman", serif;
-  position: fixed;
-  margin-left: 1050px;
-  margin-top: 300px;
-  top: 0;
-  width: 300px;
+a, .links li:before, .links li:after, .links .last {
+  color: #1896ca;
   }
   
-wide {
-  letter-spacing: 16px;
+.sidebar-image img {
+  border-radius: 0.175em;
   }
-  
-midwide {
-  letter-spacing: 3px;
+
+
+/*Alternate style of spacers for nav links. Replace with "" for no spacer characters.*/  
+.links li:before {
+  content: " ";
+  }
+
+.links li:after {
+  content: " â¬ª ";
+  }
+
+.links .last:after {
+  content: " ";
+  }
+
+/*Increase gap between automatic spacers.*/
+.links li:before, .links li:after {
+  letter-spacing: 0.375em;
   }
